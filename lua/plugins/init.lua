@@ -47,6 +47,18 @@ return require('packer').startup(function(use)
 						name = "tlaplus",
 						path = "~/vaults/tlaplus",
 					},
+					{
+						name = "exercise",
+						path = "~/vaults/exercise",
+					},
+					{
+						name = "quine",
+						path = "~/vaults/quine",
+					},
+					{
+						name = "outlier",
+						path = "~/vaults/outlier",
+					},
 				},
 
 				-- see below for full list of options 👇
