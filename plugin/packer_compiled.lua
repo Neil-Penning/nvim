@@ -74,6 +74,17 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["dropbar.nvim"] = {
+    config = { "\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fdropbar\frequire\0" },
+    loaded = true,
+    path = "/Users/neilpenning/.local/share/nvim/site/pack/packer/start/dropbar.nvim",
+    url = "https://github.com/Bekaboo/dropbar.nvim"
+  },
+  harpoon = {
+    loaded = true,
+    path = "/Users/neilpenning/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
+  },
   melange = {
     loaded = true,
     path = "/Users/neilpenning/.local/share/nvim/site/pack/packer/start/melange",
@@ -90,7 +101,7 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["obsidian.nvim"] = {
-    config = { "\27LJ\2\nä\2\0\0\5\0\v\0\0216\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\t\0004\3\a\0005\4\3\0>\4\1\0035\4\4\0>\4\2\0035\4\5\0>\4\3\0035\4\6\0>\4\4\0035\4\a\0>\4\5\0035\4\b\0>\4\6\3=\3\n\2B\0\2\1K\0\1\0\15workspaces\1\0\1\15workspaces\0\1\0\2\tpath\19~/vaults/quine\tname\nquine\1\0\2\tpath\22~/vaults/exercise\tname\rexercise\1\0\2\tpath\21~/vaults/tlaplus\tname\ftlaplus\1\0\2\tpath\18~/vaults/site\tname\tsite\1\0\2\tpath\18~/vaults/work\tname\twork\1\0\2\tpath\22~/vaults/personal\tname\rpersonal\nsetup\robsidian\frequire\0" },
+    config = { "\27LJ\2\n—\2\0\0\5\0\b\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0004\3\4\0005\4\3\0>\4\1\0035\4\4\0>\4\2\0035\4\5\0>\4\3\3=\3\a\2B\0\2\1K\0\1\0\15workspaces\1\0\1\15workspaces\0\1\0\2\tpath&~/vaults/deck_hone_loop/personal/\tname\rpersonal\1\0\2\tpath%~/vaults/deck_hone_loop/tlaplus/\tname\ftlaplus\1\0\2\tpath\29~/vaults/deck_hone_loop/\tname\19deck_hone_loop\nsetup\robsidian\frequire\0" },
     loaded = true,
     path = "/Users/neilpenning/.local/share/nvim/site/pack/packer/start/obsidian.nvim",
     url = "https://github.com/epwalsh/obsidian.nvim"
@@ -105,18 +116,37 @@ _G.packer_plugins = {
     path = "/Users/neilpenning/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["precognition.nvim"] = {
+    config = { "\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17precognition\frequire\0" },
+    loaded = true,
+    path = "/Users/neilpenning/.local/share/nvim/site/pack/packer/start/precognition.nvim",
+    url = "https://github.com/tris203/precognition.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/neilpenning/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tlaplus-nvim-plugin"] = {
+    loaded = true,
+    path = "/Users/neilpenning/.local/share/nvim/site/pack/packer/start/tlaplus-nvim-plugin",
+    url = "https://github.com/tlaplus-community/tlaplus-nvim-plugin"
   }
 }
 
 time([[Defining packer_plugins]], false)
 -- Config for: obsidian.nvim
 time([[Config for obsidian.nvim]], true)
-try_loadstring("\27LJ\2\nä\2\0\0\5\0\v\0\0216\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\t\0004\3\a\0005\4\3\0>\4\1\0035\4\4\0>\4\2\0035\4\5\0>\4\3\0035\4\6\0>\4\4\0035\4\a\0>\4\5\0035\4\b\0>\4\6\3=\3\n\2B\0\2\1K\0\1\0\15workspaces\1\0\1\15workspaces\0\1\0\2\tpath\19~/vaults/quine\tname\nquine\1\0\2\tpath\22~/vaults/exercise\tname\rexercise\1\0\2\tpath\21~/vaults/tlaplus\tname\ftlaplus\1\0\2\tpath\18~/vaults/site\tname\tsite\1\0\2\tpath\18~/vaults/work\tname\twork\1\0\2\tpath\22~/vaults/personal\tname\rpersonal\nsetup\robsidian\frequire\0", "config", "obsidian.nvim")
+try_loadstring("\27LJ\2\n—\2\0\0\5\0\b\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0004\3\4\0005\4\3\0>\4\1\0035\4\4\0>\4\2\0035\4\5\0>\4\3\3=\3\a\2B\0\2\1K\0\1\0\15workspaces\1\0\1\15workspaces\0\1\0\2\tpath&~/vaults/deck_hone_loop/personal/\tname\rpersonal\1\0\2\tpath%~/vaults/deck_hone_loop/tlaplus/\tname\ftlaplus\1\0\2\tpath\29~/vaults/deck_hone_loop/\tname\19deck_hone_loop\nsetup\robsidian\frequire\0", "config", "obsidian.nvim")
 time([[Config for obsidian.nvim]], false)
+-- Config for: precognition.nvim
+time([[Config for precognition.nvim]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\17precognition\frequire\0", "config", "precognition.nvim")
+time([[Config for precognition.nvim]], false)
+-- Config for: dropbar.nvim
+time([[Config for dropbar.nvim]], true)
+try_loadstring("\27LJ\2\n5\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\fdropbar\frequire\0", "config", "dropbar.nvim")
+time([[Config for dropbar.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
