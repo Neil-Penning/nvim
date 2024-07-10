@@ -17,5 +17,6 @@ vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 
 vim.opt.list = true
+-- todo - :set paste also runs :set list!
 vim.cmd("set listchars=tab:!·,trail:·,eol:¬,space:·")
 
