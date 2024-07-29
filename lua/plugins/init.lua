@@ -38,6 +38,10 @@ return require('packer').startup(function(use)
                         path = "~/vaults/deck_hone_loop/tlaplus/",
                     },
                     {
+                        name = "penning_solutions",
+                        path = "~/Documents/Penning_Solutions/",
+                    },
+                    {
                         name = "personal",
                         path = "~/vaults/deck_hone_loop/personal/",
                     },
@@ -66,6 +70,13 @@ return require('packer').startup(function(use)
     }
     -- Installed 2024-06-23
     use 'tlaplus-community/tlaplus-nvim-plugin'
+    --
+    -- Installed 2024-07-10
+    use 'Neovim/nvim-lspconfig'
+    use 'tummetott/unimpaired.nvim'
+
+    -- Installed 2024-07-15
+    use 'mfussenegger/nvim-dap'
 
     --[[ Untested Plugins
     use 'jvgrootveld/telescope-zoxide' -- use zoxide within neovim
