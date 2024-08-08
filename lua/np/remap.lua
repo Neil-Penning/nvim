@@ -69,3 +69,14 @@ vim.keymap.set("n", "<C-S-N>", function() harpoon:list():next() end)
 
 -- LSP
 vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end)
+
+
+
+-- Misc
+-- Function to generate the filename
+
+-- note-weekly
+vim.keymap.set('n', '<leader>nw',function() vim.cmd('edit ' .. os.date("%Y_%V.md")) end)
+-- note-yearly
+vim.keymap.set('n', '<leader>ny',function() vim.cmd('edit ' .. os.date("%Y.md")) end)
+
