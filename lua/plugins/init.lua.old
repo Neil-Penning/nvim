@@ -4,6 +4,7 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
     -- Packer can manage itself
+    use 'folke/lazy.nvim'
     use 'wbthomason/packer.nvim'
     use 'hrsh7th/nvim-cmp'
     use 'savq/melange'

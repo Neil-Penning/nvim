@@ -1,6 +1,6 @@
+require("config.lazy")
 require("np")
 require("np.remap")
-require("plugins")
 require("nvim-treesitter.configs").setup({
   ensure_installed = { "markdown", "markdown_inline", "java", "python", "rust", "lua", "toml" },
   highlight = {
